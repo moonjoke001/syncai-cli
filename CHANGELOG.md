@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2026-01-20
+
+### Enhanced
+
+- OpenCode: Added sync paths for `opencode.json`, `command/`, `plugin/`, `superpowers/`
+- OpenCode: Added ignore patterns for `node_modules/`, `antigravity*.json`, lock files
+- Gemini CLI: Added ignore patterns for `google_accounts.json`, `installation_id`, `tmp/`, browser profile
+- Improved security by excluding more sensitive files from sync
+
+### Fixed
+
+- Updated test count to 42 (was showing 41)
+
 ## [1.0.0] - 2025-01-19
 
 ### Added
