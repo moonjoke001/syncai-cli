@@ -7,7 +7,7 @@
 
 ## 🌟 Features
 
-- **Multi-Tool Support**: Synchronize configurations for OpenCode, Kiro CLI, Gemini CLI, and Claude Code.
+- **Multi-Tool Support**: Synchronize configurations for OpenCode, Kiro CLI, Gemini CLI, Claude Code, Cursor, Windsurf, Continue, and Cody.
 - **Secure Cloud Storage**: Uses a private GitHub repository (`syai`) for synchronization.
 - **Sensitive Data Detection**: Automatically detects and warns about potential secrets (API keys, tokens, passwords) before pushing.
 - **Automatic Backups**: Creates a backup of your local configurations before performing destructive pull operations.
@@ -73,6 +73,8 @@ SyncAI provides a unified `syncai` command as well as short aliases for common t
 | `aihistory` | - | View the synchronization history (git commit log). |
 | `airollback` | - | Roll back to a previous version of your configurations. |
 | `aiplugin` | - | Manage custom tool plugins. |
+| `aiwatch` | - | Watch for config changes and auto-sync. |
+| `aimigrate` | - | Migrate configurations between AI tools. |
 | `aihelp` | - | Show detailed help information. |
 
 ### Common Workflows
@@ -114,6 +116,19 @@ aipull --force
 #### 7. Non-Interactive Pull
 ```bash
 aipull --no-interactive
+```
+
+#### 8. Watch Mode (Auto-Sync)
+Monitor your config files and automatically sync when changes are detected.
+```bash
+aiwatch --all
+aiwatch --interval=10  # Check every 10 seconds
+```
+
+#### 9. Migrate Configs Between Tools
+Copy your configurations from one AI tool to another.
+```bash
+aimigrate
 ```
 
 ## ⚙️ Configuration
