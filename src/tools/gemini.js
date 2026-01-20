@@ -9,11 +9,15 @@ export default {
   ],
   ignore: [
     'oauth_creds.json',
+    'google_accounts.json',
+    'installation_id',
     'cache/',
     '*.log',
     '.git/',
     '**/.git/**',
     'antigravity/',
+    'antigravity-browser-profile/',
+    'tmp/',
     'update_available.txt'
   ],
   detectMethods: ['which', 'npm-global'],
