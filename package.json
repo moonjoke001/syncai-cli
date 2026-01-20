@@ -20,6 +20,8 @@
     "aihistory": "./src/bin/aihistory.js",
     "airollback": "./src/bin/airollback.js",
     "aiplugin": "./src/bin/aiplugin.js",
+    "aiwatch": "./src/bin/aiwatch.js",
+    "aimigrate": "./src/bin/aimigrate.js",
     "aihelp": "./src/bin/aihelp.js"
   },
   "scripts": {

@@ -29,6 +29,8 @@ export async function run(args) {
   console.log(`  ${chalk.yellow('aihistory')}   查看提交历史`);
   console.log(`  ${chalk.yellow('airollback')}  回滚到历史版本`);
   console.log(`  ${chalk.yellow('aiplugin')}    管理工具插件`);
+  console.log(`  ${chalk.yellow('aiwatch')}     监视配置变更并自动同步`);
+  console.log(`  ${chalk.yellow('aimigrate')}   在工具间迁移配置`);
   console.log('');
   
   console.log(chalk.bold('常用选项:'));
