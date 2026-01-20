@@ -1,0 +1,74 @@
+{
+  "name": "syncai-cli",
+  "version": "1.0.0",
+  "description": "Sync AI tool configurations across OpenCode, Kiro CLI, Gemini CLI, Claude Code, Cursor, Windsurf, Continue, and Cody",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "syncai": "./src/index.js",
+    "aiinit": "./src/bin/aiinit.js",
+    "aidetect": "./src/bin/aidetect.js",
+    "aiscan": "./src/bin/aiscan.js",
+    "aipull": "./src/bin/aipull.js",
+    "aipush": "./src/bin/aipush.js",
+    "aistatus": "./src/bin/aistatus.js",
+    "aist": "./src/bin/aistatus.js",
+    "aidiff": "./src/bin/aidiff.js",
+    "aiconfig": "./src/bin/aiconfig.js",
+    "aiauth": "./src/bin/aiauth.js",
+    "aibackup": "./src/bin/aibackup.js",
+    "aihistory": "./src/bin/aihistory.js",
+    "airollback": "./src/bin/airollback.js",
+    "aiplugin": "./src/bin/aiplugin.js",
+    "aihelp": "./src/bin/aihelp.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test",
+    "link": "npm link",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "syncai",
+    "opencode",
+    "kiro",
+    "gemini",
+    "claude",
+    "cursor",
+    "windsurf",
+    "continue",
+    "cody",
+    "ai",
+    "config",
+    "sync",
+    "cli",
+    "ai-tools",
+    "configuration",
+    "backup"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonjoke001/syncai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moonjoke001/syncai/issues"
+  },
+  "homepage": "https://github.com/moonjoke001/syncai#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "inquirer": "^9.2.0",
+    "minimatch": "^9.0.0",
+    "ora": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src/**/*",
+    "README.md",
+    "LICENSE"
+  ]
+}
