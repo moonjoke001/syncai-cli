@@ -114,4 +114,10 @@ describe('Lib: Sync', () => {
     assert.ok(Array.isArray(conflicts), 'Should return array');
     assert.strictEqual(conflicts.length, 0, 'Should return empty for unknown tool');
   });
+  
+  it('should get sync status for unknown tool', async () => {
+    const status = await getSyncStatus('unknown-tool');
+    assert.ok(typeof status === 'object', 'Should return object');
+    assert.ok('status' in status, 'Should have status property');
+  });
 });

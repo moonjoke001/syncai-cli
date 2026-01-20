@@ -189,7 +189,7 @@ export async function getSyncStatus(toolName) {
   const configDir = await getEffectiveConfigDir(toolName);
   const repoDir = path.join(expandHome('~/.config/syncai'), 'repo', toolName);
   
-  if (!await pathExists(expandHome(configDir))) {
+  if (!configDir || !await pathExists(expandHome(configDir))) {
     return { status: 'no_local', files: [] };
   }
   
