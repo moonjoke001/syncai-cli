@@ -15,6 +15,7 @@ import { run as runHistory } from './commands/history.js';
 import { run as runRollback } from './commands/rollback.js';
 import { run as runPlugin } from './commands/plugin.js';
 import { run as runHelp } from './commands/help.js';
+import { checkAndPromptUpdates } from './lib/version-checker.js';
 
 const program = new Command();
 
@@ -210,8 +211,11 @@ console.log(chalk.cyan(`
 `));
 console.log(chalk.gray('  Sync AI configs across OpenCode, Kiro, Gemini, Claude & more\n'));
 
-program.parse();
+(async () => {
+  await checkAndPromptUpdates({ silent: false });
+  program.parse();
 
-if (!process.argv.slice(2).length) {
-  program.help();
-}
+  if (!process.argv.slice(2).length) {
+    program.help();
+  }
+})();
