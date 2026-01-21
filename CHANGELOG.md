@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-01-21
+
+### Added
+
+- **Skill/Plugin Version Checker**: Automatic update detection for installed skills and plugins
+  - Checks oh-my-opencode, superpowers, planning-with-files, ui-ux-pro-max-skill, opencode-antigravity-auth
+  - Uses GitHub API to fetch latest versions (releases, tags, or commits)
+  - 24-hour cache to minimize API calls
+  - Interactive upgrade prompt with checkbox selection
+- **`aicheck` command**: Manual trigger for version checking with `--force` flag to bypass cache
+
+### Changed
+
+- OpenCode: Now syncs `antigravity.json` and `antigravity-accounts.json` (private repo is safe)
+- `syncai` main command now checks for updates on startup (once per day)
+
+### Fixed
+
+- OpenCode ignore rules were blocking `antigravity*.json` from syncing
+
 ## [1.0.1] - 2026-01-20
 
 ### Enhanced

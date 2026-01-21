@@ -1,6 +1,6 @@
 {
   "name": "syncai-cli",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Sync AI tool configurations across OpenCode, Kiro CLI, Gemini CLI, Claude Code, Cursor, Windsurf, Continue, and Cody",
   "type": "module",
   "main": "src/index.js",
@@ -22,6 +22,7 @@
     "aiplugin": "./src/bin/aiplugin.js",
     "aiwatch": "./src/bin/aiwatch.js",
     "aimigrate": "./src/bin/aimigrate.js",
+    "aicheck": "./src/bin/aicheck.js",
     "aihelp": "./src/bin/aihelp.js"
   },
   "scripts": {
