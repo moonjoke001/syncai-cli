@@ -20,7 +20,6 @@ export default {
     '**/.git/**',
     'node_modules/',
     '**/node_modules/**',
-    'antigravity*.json',
     'bun.lock',
     'package-lock.json'
   ],
